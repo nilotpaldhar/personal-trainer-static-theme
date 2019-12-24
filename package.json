@@ -1,0 +1,30 @@
+{
+	"name": "personal-trainer-theme",
+	"version": "1.0.0",
+	"description": "A static website for a personal trainer",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack-dev-server --config webpack.dev.js --open",
+		"build": "webpack --config webpack.prod.js"
+	},
+	"author": "Nilotpal Dhar",
+	"license": "ISC",
+	"devDependencies": {
+		"clean-webpack-plugin": "^3.0.0",
+		"copy-webpack-plugin": "^5.1.1",
+		"css-loader": "^3.2.1",
+		"file-loader": "^5.0.2",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"jquery": "^3.4.1",
+		"mini-css-extract-plugin": "^0.8.0",
+		"node-sass": "^4.13.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.3",
+		"sass-loader": "^8.0.0",
+		"style-loader": "^1.0.1",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10",
+		"webpack-dev-server": "^3.9.0",
+		"webpack-merge": "^4.2.2"
+	}
+}

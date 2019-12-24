@@ -1,0 +1,31 @@
+body {
+	font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+	display: inline-block;
+
+	&.heading__primary {
+		font-size: 4rem;
+		font-weight: 400;
+		line-height: 2;
+		position: relative;
+		@include textColor;
+
+		&::after {
+			content: "";
+			height: 0.6rem;
+			width: 50%;
+			background-image: linear-gradient(
+				to right,
+				rgba($color-primary, 1),
+				rgba($color-secondary, 1)
+			);
+			position: absolute;
+			border-radius: 3px;
+			@include absCentre;
+
+			top: 100%;
+		}
+	}
+}

@@ -1,0 +1,362 @@
+.header {
+	&__container {
+		// background-color: orangered;
+		text-align: center;
+		@include absCentre;
+		top: 55%;
+	}
+
+	&__welcome_text {
+		color: $light-text;
+		font-weight: 300;
+		font-size: 3rem;
+		text-transform: capitalize;
+	}
+
+	&__tagline {
+		font-size: 6rem;
+		color: $color-white;
+		font-weight: 500;
+		line-height: 1.4;
+		text-transform: capitalize;
+		margin: 1.8rem 0 4rem 0;
+
+		span {
+			display: block;
+		}
+	}
+}
+
+.about {
+	padding: 10rem 0;
+
+	&__photo-box {
+		display: inline-block;
+		position: relative;
+		width: 40rem;
+		height: 40rem;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
+	&__photo {
+		width: auto;
+		height: 100%;
+		margin-left: -7rem;
+	}
+
+	&__details {
+		text-align: left;
+	}
+
+	&__name {
+		font-size: 2rem;
+		font-weight: 600;
+		color: $dark-text-1;
+	}
+
+	&__profession {
+		font-size: 1.6rem;
+		font-weight: 400;
+		color: $dark-text-2;
+	}
+
+	&__description {
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: $dark-text-2;
+		line-height: 1.8;
+	}
+
+	hr {
+		margin: 2rem 0;
+	}
+
+	&__ref-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__ref-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__ref-number {
+		font-size: 4.8rem;
+		font-weight: 500;
+		@include textColor;
+	}
+
+	&__ref-text {
+		font-size: 1.4rem;
+		color: $dark-text-2;
+	}
+}
+
+.booking {
+	padding: 9rem 0;
+	background-image: linear-gradient(
+			to bottom,
+			rgba($color-black, 0.8),
+			rgba($color-black, 0.8)
+		),
+		url(../assets/bg-2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	&__container {
+		max-width: 55%;
+		margin: 0 auto;
+	}
+
+	&__heading {
+		font-size: 4.5rem;
+		font-weight: 300;
+		color: $color-white;
+	}
+
+	&__description {
+		font-size: 1.8rem;
+		font-weight: 400;
+		color: $color-white;
+		margin: 3rem 0;
+		line-height: 1.8;
+	}
+}
+
+.services {
+	padding: 10rem 0;
+
+	&__details {
+		text-align: left;
+	}
+
+	&__heading {
+		font-size: 2rem;
+		color: $dark-text-1;
+		line-height: 1.2;
+
+		span {
+			display: block;
+		}
+	}
+
+	&__description {
+		font-size: 1.4rem;
+		color: $dark-text-2;
+		margin: 2.5rem 0;
+		line-height: 1.8;
+	}
+
+	&__img-box {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 38rem;
+		overflow: hidden;
+		border-radius: 3px;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 3px;
+	}
+}
+
+.stories {
+	background-color: $color-white;
+	padding: 5rem;
+}
+
+.faq {
+	background-color: $color-white;
+	padding: 5rem;
+
+	.row {
+		margin-bottom: 0;
+		margin: 8rem 0;
+	}
+
+	&__box {
+		&:not(:last-child) {
+			margin-bottom: 4rem;
+		}
+		padding: 0 2rem;
+	}
+
+	&__heading {
+		font-size: 2rem;
+		color: $dark-text-1;
+		margin-bottom: 1rem;
+	}
+
+	&__description {
+		font-size: 1.4rem;
+		color: $dark-text-1;
+		line-height: 1.8;
+	}
+
+	&__more-heading {
+		font-size: 4rem;
+		color: $dark-text-1;
+		font-weight: 400;
+		margin-bottom: 1.5rem;
+	}
+
+	&__more-text {
+		font-size: 1.8rem;
+		color: $dark-text-1;
+		font-weight: 400;
+	}
+
+	&__link:link,
+	&__link:visited {
+		display: inline-block;
+		text-decoration: none;
+		@include textColor;
+		transition: all 0.3s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.pricing {
+	padding: 10rem 0;
+
+	&__details {
+		text-align: center;
+		color: $dark-text-1;
+	}
+
+	&__sub-heading {
+		font-size: 1.4rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	&__main-heading {
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+
+	&__price {
+		@include textColor;
+		line-height: 1;
+		margin-bottom: 2rem;
+
+		&-num {
+			span:first-child {
+				font-size: 3rem;
+			}
+
+			span:last-child {
+				font-size: 14rem;
+			}
+		}
+
+		&-per {
+			font-size: 1.8rem;
+			font-weight: 500;
+		}
+	}
+
+	&__feature {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 1.5rem;
+
+		&:not(:last-child) {
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__feature-icon {
+		width: 4rem;
+		height: 4rem;
+		fill: $dark-text-1;
+		margin-right: 1.4rem;
+		margin-top: -0.8rem;
+	}
+
+	&__feature-heading {
+		font-size: 1.6rem;
+		font-weight: 600;
+		margin-bottom: 0.8rem;
+		color: $dark-text-1;
+	}
+
+	&__feature-description {
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: $dark-text-1;
+	}
+}
+
+.contact {
+	padding: 5rem 0 10rem 0;
+
+	&__details {
+		text-align: left;
+		font-size: 1.4rem;
+		color: $dark-text-1;
+	}
+
+	&__info {
+		&--one {
+			line-height: 1.8;
+			margin-bottom: 2.5rem;
+			padding-bottom: 2rem;
+			border-bottom: 1px solid;
+			border-color: rgba($light-text, 0.5);
+		}
+
+		&--two {
+		}
+
+		&--three {
+		}
+	}
+
+	&__name {
+		font-weight: 700;
+	}
+
+	&__address {
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+	&__icon {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 2rem;
+		fill: url(#svg-gradient) $color-secondary;
+	}
+
+	&__text:link,
+	&__text:visited {
+		text-decoration: none;
+		color: $dark-text-1;
+		transition: all 0.2s ease-in-out;
+		border-bottom: 1px solid rgba($dark-text-1, 0.5);
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}

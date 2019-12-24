@@ -1,0 +1,41 @@
+// Clearfix
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// Overlay
+@mixin overlay {
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color-black, 0.85);
+		z-index: -10;
+	}
+}
+
+// Absolute Centre
+@mixin absCentre {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// Text color
+@mixin textColor {
+	background-image: linear-gradient(
+		to bottom,
+		rgba($color-primary, 1),
+		rgba($color-secondary, 1)
+	);
+	-webkit-background-clip: text;
+	color: transparent;
+}

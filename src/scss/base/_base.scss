@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%; // 1rem = 1px
+}
+
+body {
+	box-sizing: border-box;
+	line-height: 1.6;
+	background-color: $color-divider;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba($color-black, 0.1);
+	border-bottom: 1px solid rgba($color-white, 0.3);
+}
+
+::selection {
+	background-color: $color-secondary;
+	color: $color-white;
+}

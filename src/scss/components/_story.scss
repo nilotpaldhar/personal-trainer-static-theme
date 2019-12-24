@@ -1,0 +1,63 @@
+.story {
+	background-color: $light-text-3;
+	padding: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+
+	&__user {
+		height: 10rem;
+		width: 10rem;
+		position: relative;
+		margin: -6rem 0 2.5rem 0;
+		// background-color: orangered;
+	}
+
+	&__user-photo {
+		display: inline-block;
+		border-radius: 50%;
+		height: 100%;
+		transition: all 0.5s;
+	}
+
+	&__user-name {
+		@include absCentre;
+		transform: translate(-50%, -10%);
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: $color-white;
+
+		line-height: 1.3;
+		opacity: 0;
+		transition: all 0.5s;
+	}
+
+	&__user-review {
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: $dark-text-1;
+		line-height: 2.5;
+		text-align: left;
+	}
+
+	&__quote {
+		font-size: 2rem;
+		line-height: 2.5;
+		@include textColor;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&:hover &__user-name {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover &__user-photo {
+		filter: brightness(20%);
+	}
+}
