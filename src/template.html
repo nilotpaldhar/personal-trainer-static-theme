@@ -11,45 +11,43 @@
     <!-- Main Font[Montserrat] -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <title>Erik Fisher | Personal Trainer</title>
 </head>
 
-<body id="home">
+<body>
 
     <!-- Main Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-1-of-6">
-                    <a href="#" class="navbar__brand">Erik Fisher</a>
-                </div>
-                <div class="col-5-of-6">
-                    <ul class="navbar__nav">
-                        <li class="navbar__item">
-                            <a href="#home" class="navbar__link active">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#about" class="navbar__link">About</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Services</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Stories</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Pricing</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Faq</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <a href="#" class="navbar__brand">Erik Fisher</a>
+        <div class="navbar__toggle">
+            <span class="navbar__toggle-icon"></span>
         </div>
+        <ul class="navbar__nav">
+            <li class="navbar__item">
+                <a href="#home" class="navbar__link active">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#about" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Services</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Stories</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Pricing</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Faq</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">Contact</a>
+            </li>
+        </ul>
     </nav>
 
     <!-- Header -->
@@ -75,7 +73,7 @@
 
             <div class="container">
                 <div class="row align-items-centre">
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 d-md-none">
                         <div class="about__photo-box">
                             <img src="./assets/about.jpg" alt="" class="about__photo">
                         </div>
@@ -129,26 +127,29 @@
 
         <!-- Booking Section -->
         <section class="booking text-centre" id="booking">
-            <div class="booking__container">
-                <h1 class="booking__heading">
-                    Start Transforming Your Body Today !
-                </h1>
-                <p class="booking__description">
-                    Start working on your body today with our 12 week program to help you get ripped. Feature includes
-                    detailed
-                    diet plan
-                    and cardio schedule, al ong with a 4 day upper/lower muscle building split.
-                </p>
-                <a href="#" class="btn btn__primary">
-                    Get my 12 week program
-                </a>
+            <div class="container">
+                <div class="booking__container">
+                    <h1 class="booking__heading">
+                        Start Transforming Your Body Today !
+                    </h1>
+                    <p class="booking__description">
+                        Start working on your body today with our 12 week program to help you get ripped. Feature
+                        includes
+                        detailed
+                        diet plan
+                        and cardio schedule, al ong with a 4 day upper/lower muscle building split.
+                    </p>
+                    <a href="#" class="btn btn__primary">
+                        Get my 12 week program
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Services Section -->
         <section class="services text-centre" id="services">
             <div class="container">
-                <h2 class="heading heading__primary mb-xl">My Services</h2>
+                <h2 class="heading heading__primary mb-lg">My Services</h2>
                 <div class="row align-items-centre">
                     <div class="col-1-of-2">
                         <div class="services__details">
@@ -171,7 +172,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 d-md-none">
                         <div class="services__img-box">
                             <img src="./assets/services-1.png" alt="Service One" class="services__img">
                             <div class="overlay"></div>
@@ -180,13 +181,7 @@
                 </div>
 
                 <div class="row align-items-centre">
-                    <div class="col-1-of-2">
-                        <div class="services__img-box">
-                            <img src="./assets/services-2.png" alt="Service One" class="services__img">
-                            <div class="overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 order-2 order-md-1">
                         <div class="services__details">
                             <h4 class="services__heading">
                                 <span>Personalised</span>
@@ -205,6 +200,12 @@
                                     </svg>
                                 </span>
                             </a>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2 order-md-2  d-md-none">
+                        <div class="services__img-box">
+                            <img src="./assets/services-2.png" alt="Service One" class="services__img">
+                            <div class="overlay"></div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +232,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 d-md-none">
                         <div class="services__img-box">
                             <img src="./assets/services-3.png" alt="Service One" class="services__img">
                             <div class="overlay"></div>
@@ -240,7 +241,7 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn__primary mt-xl">
+            <a href="#" class="btn btn__primary mt-lg">
                 Get my 12 week program
             </a>
         </section>
@@ -327,7 +328,7 @@
                         </div>
                     </div>
 
-                    <div class="col-1-of-3">
+                    <div class="col-1-of-3 d-md-none">
                         <div class="pricing__feature">
                             <svg class="pricing__feature-icon">
                                 <use xlink:href="./assets/sprite.svg#fruit"></use>
@@ -363,9 +364,9 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-1-of-3">
+
+                    <div class="col-1-of-3 d-md-none">
                         <div class="pricing__feature">
                             <svg class="pricing__feature-icon">
                                 <use xlink:href="./assets/sprite.svg#calendar"></use>
@@ -401,10 +402,10 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
-                </div>
-            </div>
+
+                </div> <!-- End of row-->
+            </div> <!-- End of container-->
         </section>
 
         <!-- FAQ Section -->
@@ -509,7 +510,7 @@
                 <h2 class="heading heading__primary mb-lg">Get In Touch</h2>
 
                 <div class="row align-items-centre">
-                    <div class="col-2-of-6">
+                    <div class="col-2-of-6 order-md-2">
                         <div class="contact__details">
                             <div class="contact__info contact__info--one">
                                 <p class="contact__name">Erik Fisher</p>
@@ -556,7 +557,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4-of-6">
+                    <div class="col-4-of-6 order-md-1">
                         <form class="form" action="#">
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Your Name">
@@ -599,6 +600,7 @@
         </linearGradient>
     </svg>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <script>
         let a = document.querySelectorAll('a');
@@ -614,6 +616,16 @@
                 e.preventDefault();
             })
         });
+
+        const navbar = document.querySelector('.navbar__toggle');
+        const nav = document.querySelector('.navbar__nav');
+
+        navbar.addEventListener('click', function () {
+            navbar.classList.toggle('close');
+            $('.navbar__nav').slideToggle();
+        })
+
+
     </script>
 </body>
 

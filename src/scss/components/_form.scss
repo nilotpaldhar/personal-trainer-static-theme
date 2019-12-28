@@ -2,6 +2,10 @@
 	max-width: 100%;
 	font-size: 1.5rem;
 
+	@include respond(tab-port) {
+		font-size: 1.75rem;
+	}
+
 	&__group {
 		&:not(:last-child) {
 			margin-bottom: 1rem;
@@ -40,6 +44,7 @@
 	&__submit[type="submit"] {
 		display: block;
 		width: 100%;
+		font-size: 2rem;
 		border: none;
 		padding: 1rem;
 		background-image: linear-gradient(

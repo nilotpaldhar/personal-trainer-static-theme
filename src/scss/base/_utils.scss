@@ -1,0 +1,360 @@
+// Container or wrapper
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+
+	@include respond(tab-land) {
+		max-width: $container-width-tab-land;
+	}
+
+	@include respond(tab-port) {
+		max-width: $container-width-tab-port;
+	}
+
+	@include respond(phone) {
+		max-width: $container-width-phone;
+	}
+}
+
+// Text Centre
+.text-centre {
+	text-align: center !important;
+}
+
+// Margin top
+.mt-sm {
+	margin-top: 1.5rem !important;
+}
+.mt-md {
+	margin-top: 3rem !important;
+}
+.mt-lg {
+	margin-top: 5rem !important;
+}
+.mt-xl {
+	margin-top: 10rem !important;
+}
+
+// Margin bottom
+.mb-sm {
+	margin-bottom: 1.5rem !important;
+}
+.mb-md {
+	margin-bottom: 3rem !important;
+}
+.mb-lg {
+	margin-bottom: 5rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 6.25rem !important;
+	}
+}
+.mb-xl {
+	margin-bottom: 10rem !important;
+}
+
+// Margin right
+.mr-sm {
+	margin-right: 1.5rem !important;
+}
+.mr-md {
+	margin-right: 3rem !important;
+}
+.mr-lg {
+	margin-right: 5rem !important;
+}
+.mr-xl {
+	margin-right: 10rem !important;
+}
+
+// Margin left
+.ml-sm {
+	margin-left: 1.5rem !important;
+}
+.ml-md {
+	margin-left: 3rem !important;
+}
+.ml-lg {
+	margin-left: 5rem !important;
+}
+.ml-xl {
+	margin-left: 10rem !important;
+}
+
+// Padding top
+.pt-sm {
+	padding-top: 1.5rem !important;
+}
+.pt-md {
+	padding-top: 3rem !important;
+}
+.pt-lg {
+	padding-top: 5rem !important;
+}
+.pt-xl {
+	padding-top: 10rem !important;
+}
+
+// Padding bottom
+.pb-sm {
+	padding-bottom: 1.5rem !important;
+}
+.pb-md {
+	padding-bottom: 3rem !important;
+}
+.pb-lg {
+	padding-bottom: 5rem !important;
+}
+.pb-xl {
+	padding-bottom: 10rem !important;
+}
+
+// Padding right
+.pr-sm {
+	padding-right: 1.5rem !important;
+}
+.pr-md {
+	padding-right: 3rem !important;
+}
+.pr-lg {
+	padding-right: 5rem !important;
+}
+.pr-xl {
+	padding-right: 10rem !important;
+}
+
+// Padding left
+.pl-sm {
+	padding-left: 1.5rem !important;
+}
+.pl-md {
+	padding-left: 3rem !important;
+}
+.pl-lg {
+	padding-left: 5rem !important;
+}
+.pl-xl {
+	padding-left: 10rem !important;
+}
+
+// Flexbox
+.d-flex {
+	display: flex !important;
+}
+
+.align-items-centre {
+	align-items: center !important;
+}
+
+.justify-content-centre {
+	justify-content: center !important;
+}
+
+// Flexbox Order
+.order-1 {
+	order: 1;
+}
+
+@include respond(big-desktop) {
+	.order-xl-1 {
+		order: 1;
+	}
+}
+
+@include respond(tab-land) {
+	.order-lg-1 {
+		order: 1;
+	}
+}
+
+@include respond(tab-port) {
+	.order-md-1 {
+		order: 1;
+	}
+}
+
+@include respond(phone) {
+	.order-sm-1 {
+		order: 1;
+	}
+}
+
+.order-2 {
+	order: 2;
+}
+
+@include respond(big-desktop) {
+	.order-xl-2 {
+		order: 2;
+	}
+}
+
+@include respond(tab-land) {
+	.order-lg-2 {
+		order: 2;
+	}
+}
+
+@include respond(tab-port) {
+	.order-md-2 {
+		order: 2;
+	}
+}
+
+@include respond(phone) {
+	.order-sm-2 {
+		order: 2;
+	}
+}
+
+.order-3 {
+	order: 3;
+}
+
+@include respond(big-desktop) {
+	.order-xl-3 {
+		order: 3;
+	}
+}
+
+@include respond(tab-land) {
+	.order-lg-3 {
+		order: 3;
+	}
+}
+
+@include respond(tab-port) {
+	.order-md-3 {
+		order: 3;
+	}
+}
+
+@include respond(phone) {
+	.order-sm-3 {
+		order: 3;
+	}
+}
+
+.order-4 {
+	order: 4;
+}
+
+@include respond(big-desktop) {
+	.order-xl-4 {
+		order: 4;
+	}
+}
+
+@include respond(tab-land) {
+	.order-lg-4 {
+		order: 4;
+	}
+}
+
+@include respond(tab-port) {
+	.order-md-4 {
+		order: 4;
+	}
+}
+
+@include respond(phone) {
+	.order-sm-4 {
+		order: 4;
+	}
+}
+
+.order-5 {
+	order: 5;
+}
+
+@include respond(big-desktop) {
+	.order-xl-5 {
+		order: 5;
+	}
+}
+
+@include respond(tab-land) {
+	.order-lg-5 {
+		order: 5;
+	}
+}
+
+@include respond(tab-port) {
+	.order-md-5 {
+		order: 5;
+	}
+}
+
+@include respond(phone) {
+	.order-sm-5 {
+		order: 5;
+	}
+}
+
+.order-6 {
+	order: 6;
+}
+
+@include respond(big-desktop) {
+	.order-xl-6 {
+		order: 6;
+	}
+}
+
+@include respond(tab-land) {
+	.order-lg-6 {
+		order: 6;
+	}
+}
+
+@include respond(tab-port) {
+	.order-md-6 {
+		order: 6;
+	}
+}
+
+@include respond(phone) {
+	.order-sm-6 {
+		order: 6;
+	}
+}
+
+// Display
+.d-none {
+	display: none;
+}
+
+@include respond(big-desktop) {
+	.d-xl-none {
+		display: none;
+	}
+}
+
+@include respond(tab-land) {
+	.d-lg-none {
+		display: none;
+	}
+}
+
+@include respond(tab-port) {
+	.d-md-none {
+		display: none;
+	}
+}
+
+@include respond(phone) {
+	.d-sm-none {
+		display: none;
+	}
+}
+
+// Overlay
+.overlay {
+	display: block;
+	background-color: rgba($color-black, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}

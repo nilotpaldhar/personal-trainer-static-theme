@@ -4,6 +4,7 @@
 		text-align: center;
 		@include absCentre;
 		top: 55%;
+		width: 100%;
 	}
 
 	&__welcome_text {
@@ -11,6 +12,10 @@
 		font-weight: 300;
 		font-size: 3rem;
 		text-transform: capitalize;
+
+		@include respond(tab-port) {
+			font-size: 3.125rem;
+		}
 	}
 
 	&__tagline {
@@ -19,7 +24,14 @@
 		font-weight: 500;
 		line-height: 1.4;
 		text-transform: capitalize;
+		letter-spacing: 2px;
+
 		margin: 1.8rem 0 4rem 0;
+
+		@include respond(tab-port) {
+			font-size: 5.625rem;
+			margin: 1.8rem 0 3rem 0;
+		}
 
 		span {
 			display: block;
@@ -29,6 +41,10 @@
 
 .about {
 	padding: 10rem 0;
+
+	@include respond(tab-port) {
+		padding: 6.25rem 0;
+	}
 
 	&__photo-box {
 		display: inline-block;
@@ -53,12 +69,20 @@
 		font-size: 2rem;
 		font-weight: 600;
 		color: $dark-text-1;
+
+		@include respond(tab-port) {
+			font-size: 2.25rem;
+		}
 	}
 
 	&__profession {
 		font-size: 1.6rem;
 		font-weight: 400;
 		color: $dark-text-2;
+
+		@include respond(tab-port) {
+			font-size: 2rem;
+		}
 	}
 
 	&__description {
@@ -66,6 +90,10 @@
 		font-weight: 400;
 		color: $dark-text-2;
 		line-height: 1.8;
+
+		@include respond(tab-port) {
+			font-size: 1.75rem;
+		}
 	}
 
 	hr {
@@ -89,11 +117,19 @@
 		font-size: 4.8rem;
 		font-weight: 500;
 		@include textColor;
+
+		@include respond(tab-port) {
+			font-size: 4.5rem;
+		}
 	}
 
 	&__ref-text {
 		font-size: 1.4rem;
 		color: $dark-text-2;
+
+		@include respond(tab-port) {
+			font-size: 1.75rem;
+		}
 	}
 }
 
@@ -110,15 +146,27 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
+	@include respond(tab-port) {
+		padding: 6rem 0;
+	}
+
 	&__container {
-		max-width: 55%;
+		max-width: 90%;
 		margin: 0 auto;
+
+		@include respond(tab-port) {
+			max-width: 100%;
+		}
 	}
 
 	&__heading {
 		font-size: 4.5rem;
 		font-weight: 300;
 		color: $color-white;
+
+		@include respond(tab-port) {
+			font-size: 4.375;
+		}
 	}
 
 	&__description {
@@ -127,11 +175,26 @@
 		color: $color-white;
 		margin: 3rem 0;
 		line-height: 1.8;
+
+		@include respond(tab-port) {
+			font-size: 2rem;
+			margin: 3.125rem 0;
+		}
 	}
 }
 
 .services {
 	padding: 10rem 0;
+
+	@include respond(tab-port) {
+		[class^="col-"] {
+			margin: 0 !important;
+		}
+	}
+
+	@include respond(tab-port) {
+		padding: 6.25rem 0;
+	}
 
 	&__details {
 		text-align: left;
@@ -145,6 +208,10 @@
 		span {
 			display: block;
 		}
+
+		@include respond(tab-port) {
+			font-size: 2.5rem;
+		}
 	}
 
 	&__description {
@@ -152,13 +219,16 @@
 		color: $dark-text-2;
 		margin: 2.5rem 0;
 		line-height: 1.8;
+
+		@include respond(tab-port) {
+			font-size: 1.75rem;
+		}
 	}
 
 	&__img-box {
 		display: block;
 		position: relative;
 		width: 100%;
-		height: 38rem;
 		overflow: hidden;
 		border-radius: 3px;
 	}
@@ -166,7 +236,6 @@
 	&__img {
 		display: block;
 		width: 100%;
-		height: 100%;
 		border-radius: 3px;
 	}
 }
@@ -183,6 +252,18 @@
 	.row {
 		margin-bottom: 0;
 		margin: 8rem 0;
+
+		@include respond(tab-port) {
+			margin: 6.25rem;
+		}
+	}
+
+	@include respond(tab-port) {
+		[class^="col-"] {
+			&:not(:last-child) {
+				margin-bottom: 4rem !important;
+			}
+		}
 	}
 
 	&__box {
@@ -196,12 +277,20 @@
 		font-size: 2rem;
 		color: $dark-text-1;
 		margin-bottom: 1rem;
+
+		@include respond(tab-port) {
+			font-size: 2.5rem;
+		}
 	}
 
 	&__description {
 		font-size: 1.4rem;
 		color: $dark-text-1;
 		line-height: 1.8;
+
+		@include respond(tab-port) {
+			font-size: 1.75rem;
+		}
 	}
 
 	&__more-heading {
@@ -233,6 +322,14 @@
 .pricing {
 	padding: 10rem 0;
 
+	@include respond(tab-port) {
+		padding: 5rem 0;
+
+		[class^="col-"] {
+			margin-bottom: 0 !important;
+		}
+	}
+
 	&__details {
 		text-align: center;
 		color: $dark-text-1;
@@ -242,11 +339,19 @@
 		font-size: 1.4rem;
 		font-weight: 500;
 		margin-bottom: 1rem;
+
+		@include respond(tab-port) {
+			font-size: 1.75rem;
+		}
 	}
 
 	&__main-heading {
 		font-size: 2.6rem;
 		font-weight: 700;
+
+		@include respond(tab-port) {
+			font-size: 3.25rem;
+		}
 	}
 
 	&__price {
@@ -257,16 +362,28 @@
 		&-num {
 			span:first-child {
 				font-size: 3rem;
+
+				@include respond(tab-port) {
+					font-size: 2.5rem;
+				}
 			}
 
 			span:last-child {
 				font-size: 14rem;
+
+				@include respond(tab-port) {
+					font-size: 17.5rem;
+				}
 			}
 		}
 
 		&-per {
 			font-size: 1.8rem;
 			font-weight: 500;
+
+			@include respond(tab-port) {
+				font-size: 2.25rem;
+			}
 		}
 	}
 
@@ -306,10 +423,34 @@
 .contact {
 	padding: 5rem 0 10rem 0;
 
+	@include respond(tab-port) {
+		padding: 5rem 0;
+
+		[class^="col-"] {
+			margin-bottom: 0 !important;
+		}
+	}
+
 	&__details {
 		text-align: left;
 		font-size: 1.4rem;
+
+		@include respond(tab-port) {
+			font-size: 1.75rem;
+		}
+
 		color: $dark-text-1;
+
+		@include respond(tab-port) {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			margin-top: 4rem;
+			padding-top: 4rem;
+			border-top: 1px solid rgba($light-text, 0.5);
+		}
 	}
 
 	&__info {
@@ -319,6 +460,16 @@
 			padding-bottom: 2rem;
 			border-bottom: 1px solid;
 			border-color: rgba($light-text, 0.5);
+
+			@include respond(tab-port) {
+				border: none;
+				margin-bottom: 0;
+				padding-bottom: 0;
+
+				p {
+					margin-bottom: 2rem;
+				}
+			}
 		}
 
 		&--two {
