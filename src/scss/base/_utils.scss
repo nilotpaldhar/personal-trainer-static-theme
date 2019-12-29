@@ -48,6 +48,10 @@
 	@include respond(tab-port) {
 		margin-bottom: 6.25rem !important;
 	}
+
+	@include respond(tab-port) {
+		margin-bottom: 3.75rem !important;
+	}
 }
 .mb-xl {
 	margin-bottom: 10rem !important;

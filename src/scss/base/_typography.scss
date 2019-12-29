@@ -31,5 +31,9 @@ body {
 		@include respond(tab-port) {
 			font-size: 3.75rem;
 		}
+
+		@include respond(phone) {
+			font-size: 3.125rem;
+		}
 	}
 }
