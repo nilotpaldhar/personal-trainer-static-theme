@@ -9,9 +9,11 @@
 	border-bottom: 1px solid rgba($color-white, 0.15);
 	z-index: 1000;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	& > div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	&.scrolled {
 		position: fixed;
@@ -32,7 +34,7 @@
 		min-width: 20rem;
 		font-size: 3rem;
 		letter-spacing: 2px;
-		font-family: "Great Vibes", cursive;
+		font-family: 'Great Vibes', cursive;
 		color: $color-white;
 		font-weight: 400;
 
@@ -134,7 +136,7 @@
 
 				&::before,
 				&::after {
-					content: "";
+					content: '';
 					display: block;
 					background-color: $light-text-2;
 					width: 100%;
