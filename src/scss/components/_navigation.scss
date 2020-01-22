@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1.5rem 10%;
+	padding: 1.5rem 0;
 	z-index: 1000;
 	background-color: rgba($color-black, 0.2);
 	border-bottom: 1px solid rgba($color-white, 0.15);
@@ -21,10 +21,6 @@
 		border-bottom: 1px solid rgba($color-white, 0.2);
 		animation-name: slideInDown;
 		animation-duration: 0.4s;
-	}
-
-	@include respond(big-desktop) {
-		padding: 1.5rem 12%;
 	}
 
 	&__brand:link,
@@ -55,7 +51,7 @@
 			left: 0;
 			width: 100%;
 			background-color: rgba($color-black, 0.2);
-			padding: 2rem 10%;
+			padding: 2rem 5%;
 			display: none;
 
 			&.scrolled {
