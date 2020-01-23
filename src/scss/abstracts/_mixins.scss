@@ -1,7 +1,7 @@
 // Clearfix
 @mixin clearfix {
 	&::after {
-		content: "";
+		content: '';
 		display: table;
 		clear: both;
 	}
@@ -10,7 +10,7 @@
 // Overlay
 @mixin overlay {
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -31,13 +31,16 @@
 
 // Text color
 @mixin textColor {
-	background-image: linear-gradient(
-		to bottom,
-		rgba($color-primary, 1),
-		rgba($color-secondary, 1)
-	);
-	-webkit-background-clip: text;
-	color: transparent;
+	color: $color-secondary;
+	@supports (-webkit-background-clip: text) {
+		background-image: linear-gradient(
+			to bottom,
+			rgba($color-primary, 1),
+			rgba($color-secondary, 1)
+		);
+		-webkit-background-clip: text;
+		color: transparent;
+	}
 }
 
 // MEDIA QUERY MANAGER

@@ -21,6 +21,8 @@ html {
 	@include respond(big-desktop) {
 		font-size: 75%; //1rem = 12, 12/16
 	}
+
+	overflow-x: hidden;
 }
 
 body {
@@ -53,4 +55,19 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
 	background-color: $color-secondary;
+
+	@supports (
+		background-image:
+			linear-gradient(
+				to bottom,
+				rgba($color-primary, 1),
+				rgba($color-secondary, 1)
+			)
+	) {
+		background-image: linear-gradient(
+			to bottom,
+			rgba($color-primary, 1),
+			rgba($color-secondary, 1)
+		);
+	}
 }
