@@ -1,7 +1,7 @@
 export function preloader() {
-	$(document).ready(function() {
+	$(window).on('load', function() {
 		setTimeout(function() {
 			$('[data-toggle="preloader"]').fadeOut(200);
-		}, 1000);
+		}, 500);
 	});
 }
